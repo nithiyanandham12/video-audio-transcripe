@@ -7,8 +7,8 @@ import os
 import time
 from fpdf import FPDF
 
-# Set the path to ffmpeg
-AudioSegment.converter = "/app/.heroku/python/bin/ffmpeg"  # Change this to the actual path where ffmpeg is installed in the Streamlit deployment environment
+# Set the path to ffmpeg if required
+# AudioSegment.converter = r"/path/to/ffmpeg"  # Change this if needed
 
 def extract_audio(video_path):
     video = mp.VideoFileClip(video_path)
